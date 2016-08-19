@@ -1,0 +1,8 @@
+venv/
+*.log
+.DS_Store
+pop_secrets.txt
+db.sqlite3
+__pycache__
+
+

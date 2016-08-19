@@ -1,0 +1,55 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+  <link href='https://fonts.googleapis.com/css?family=Muli:400,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+<body>
+  <header>
+    <h1>
+      Pop Up Web Collective
+    </h1>
+    <ul class="nav">
+      <li class="nav"><a href="{% url 'work' %}"> Portfolio </a></li>
+      <li class="nav"> <a href="{% url 'contact' %}"> Work with Us! </a></li>
+      <li class="nav selected"> <a href="{% url 'index' %}"> About </a></li>
+    </ul>
+  <div id="banner">
+    <img src="{% static 'balloon1926.jpg' %}" alt="banner photo" class="banner-photo">
+  </div>
+</header>
+  <div class="content">
+    <div class="row_container">
+      <h2>
+        Work with Us!
+      </h2>
+    </div>
+    <div class="row_container">
+      <div class="column_container">
+        <h3> Hire Us: </h3>
+        <p> We are looking for projects which allow us to play with data and craft tools which impact people.  Our labor is free but the cost of materials is not. </p>
+        <p> Interested in working with us?  E-mail us at popupwebcollective@gmail.com </p>
+      </div>
+      <div class="column_container">
+        <h3> Intern with Us:</h3>
+        <p> We are looking for a project management intern. Develop project management experience, help us be more effective, and grow your network.  </p>
+        <p> Apply by sending us a resume and cover letter at popupwebcollective@gmail.com </p>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <!-- <footer>
+    <ul>
+      <li class="nav">
+        <a href="https://www.linkedin.com/in/alisonacuna">
+        <img src="linkedin_48.png" alt="LinkedIn Logo" class="social-icon"></a>
+      </li>
+      <li class="nav">
+          <a href="https://github.com/alison-acuna">
+          <img src="github_48.png" alt="GitHub Logo" class="social-icon"></a>
+      </li>
+  </footer> -->
+</body>
+</html>

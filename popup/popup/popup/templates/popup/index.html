@@ -1,0 +1,85 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+  <link href='https://fonts.googleapis.com/css?family=Muli:400,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+<body>
+  <header>
+    <h1>
+      Pop Up Web Collective
+    </h1>
+    <ul class="nav">
+      <li class="nav"><a href="{% url 'work' %}"> Portfolio </a></li>
+      <li class="nav"> <a href="{% url 'contact' %}"> Work with Us! </a></li>
+      <li class="nav selected"> <a href="{% url 'index' %}"> About </a></li>
+    </ul>
+  <div id="banner">
+    <img src="{% static 'balloon1926.jpg'%}" alt="banner photo" class="banner-photo">
+  </div>
+</header>
+  <div class="content">
+    <div class="row_container">
+      <h2>
+        About Pop Up Web Collective
+      </h2>
+    </div>
+    <div class="row_container">
+      <p> The Pop Up Web Collective is a team of recently graduated web developers who needed internships and launched a web design firm to create them for ourselves.  We have a strong pipeline of projects to tackle and a lot of motivation to do the work and get hired into our next step.  </p>
+    </div>
+    <div class="row_container">
+      <h2>
+        Meet the Team
+      </h2>
+    </div>
+    <div class="row_container">
+      <div class="column_container">
+        <img src="{% static 'alison1.jpg' %}" alt="banner photo" class="profile-photo">
+        <h3> Alison </h3>
+        <p> Alison has a background in communication and logic via a BA in Rhetoric.  She started her career in higher ed administration - a field that is rooted in communication. Although she enjoyed the work, she also longed for opportunities to engage my analytical side.  Entering tech presented that opportunity.  She loves learning about new ways to solve problems. </p>
+        <p> Alison is looking for opportunities to work with technology that makes people more effective at connecting and impacting those around them.  Some of her recent personal projects include crafting a CRM and a Little Black Book App.  She enjoys full stack development because it allows her to Do All the Things - *ahem* -  which she quite likes.   </p>
+      </div>
+      <div class="column_container">
+        <img src="{% static 'peter.jpg' %}" alt="banner photo" class="profile-photo">
+        <h3> Peter </h3>
+        <p> Peter is an artist, a creator, and a communicator. He studied English & Theatre at Santa Clara University, engaging his passions by writing and stepping on stage. He worked as a paralegal for over a decade, drafting briefs for court, assisting attorneys in all aspects of trial, and providing support to clients. He engaged with technology, helping lawyers prepare presentations, operating courtroom tech, and taking point on questions related to the best tools for the job. He pursued his love of learning, first at Free Geek, CodeAcademy.com, and PSU, before plunging headfirst into PDX Code Guild's Web Developer Boot Camp. </p>
+        <p> Having fallen in love with back-end web development, Peter envisions a future of writing server logic, doing elegant data transformations, and working closely with a team of like-minded individuals. The DevOps field has also piqued his interest, and he hopes to learn more about how programmers help each other solve problems. </p>
+      </div>
+      <div class="column_container">
+        <img src="{% static 'erin.jpg' %}" alt="banner photo" class="profile-photo">
+        <h3> Erin </h3>
+        <p> Erin L. Fough (reportedly ‘peacock proud’ of her initials) is a native Oregonian who spent the last 13 years in Chicago and then Denver before returning to Portland last year.  Her passion for managing and compiling data behind a functional user interface led her, eventually, to study full stack web development at PDX Code Guild.  Erin gets a charge from mapping out solutions to programming challenges.  At the same time, she feels a sense of satisfaction - as if she is a jigsaw piece who finally found her puzzle.  Her desire to understand everything and everyone is responsible for those feelings of ‘charge’ and ‘satisfaction’ from programming, just as much as it explains her knack for establishing rapport with others. </p>
+        <p> As to what role she wants to play in the future, Erin is probably most interested in either Backend or QA Engineering. Her co-interns will share that she has gushed about learning the benefit of using a NoSQL v. SQL database and how desperately curious she is about graph databases.  She loves figuring out how to access data, ways to transform data, options on how to deliver data, optimizing how data is transferred from the back over the server to  front, all while ensuring those steps are as simple and functional for the user as possible.  Past history, however, also suggests that she would thrive in a role where she reviews and tests other’s work.  She certainly derived satisfaction in reviewing co-worker’s work documents (letters, emails) when they wanted help expressing themselves in the most effective way. </p>
+      </div>
+    </div>
+    <br>
+    <div class="row_container">
+      <div class="column_container">
+        <img src="{% static 'tinyballoon.jpg' %}" alt="banner photo" class="profile-photo">
+        <h3> You? </h3>
+        <p> Web Design Intern </p>
+      </div>
+      <div class="column_container">
+        <img src="{% static 'tinyballoon.jpg' %}" alt="banner photo" class="profile-photo" id="nope1">
+      </div>
+      <div class="column_container">
+        <img src="{% static 'tinyballoon.jpg' %}" alt="banner photo" class="profile-photo" id="nope2">
+      </div>
+    </div>
+
+
+  </div>
+  <!-- <footer>
+    <ul>
+      <li class="nav">
+        <a href="https://www.linkedin.com/in/alisonacuna">
+        <img src="linkedin_48.png" alt="LinkedIn Logo" class="social-icon"></a>
+      </li>
+      <li class="nav">
+          <a href="https://github.com/alison-acuna">
+          <img src="github_48.png" alt="GitHub Logo" class="social-icon"></a>
+      </li>
+  </footer> -->
+</body>
+</html>

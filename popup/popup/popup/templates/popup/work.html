@@ -1,0 +1,58 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+  <link href='https://fonts.googleapis.com/css?family=Muli:400,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+<body>
+  <header>
+    <h1>
+      Pop Up Web Collective
+    </h1>
+    <ul class="nav">
+      <li class="nav"><a href="{% url 'work' %}"> Portfolio </a></li>
+      <li class="nav"> <a href="{% url 'contact' %}"> Work with Us! </a></li>
+      <li class="nav selected"> <a href="{% url 'index' %}"> About </a></li>
+    </ul>
+  <div id="banner">
+    <img src="{% static 'balloon1926.jpg' %}" alt="banner photo" class="banner-photo">
+  </div>
+</header>
+  <div class="content">
+    <h2>
+      Portfolio
+    </h2>
+    <div class="container">
+      <div class="row">
+        <div class="item">
+          <h3 id="portfolio"> Coming Soon! </h3>
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+      <div class="row">
+          <div class="item">
+          </div>
+          <div class="item">
+          </div>
+          <div class="item">
+          </div>
+      </div>
+    </div>
+    <br>
+  </div>
+  <!-- <footer id="footer-site">
+    <ul>
+      <li class="nav">
+        <a href="https://www.linkedin.com/in/alisonacuna">
+        <img src="linkedin_48.png" alt="LinkedIn Logo" class="social-icon"></a>
+      </li>
+      <li class="nav">
+          <a href="https://github.com/alison-acuna">
+          <img src="github_48.png" alt="GitHub Logo" class="social-icon"></a>
+      </li>
+  </footer> -->
+</body>
+</html>

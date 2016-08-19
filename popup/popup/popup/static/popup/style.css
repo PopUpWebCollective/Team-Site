@@ -1,0 +1,219 @@
+/*
+
+Orange #6E2C15
+Blue #274373
+*/
+
+/*font*/
+* {
+  font-family: 'Muli', sans-serif;
+}
+
+/* Banner */
+
+
+
+#banner {
+  text-align: left;
+  background-image: url("balloon1920.jpg");
+  height: auto;
+  max-height: 5%;
+}
+
+#nope1 {
+  display: none;
+}
+
+#nope2 {
+  display: none;
+}
+
+/*nav bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #111;
+}
+
+/* Content */
+
+.content {
+  padding: 2.5%;
+  border-top: 0px;
+  border-bottom: 3px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: #ffcc33;
+}
+
+
+/* About Page */
+
+h3 {
+  color: #00898e;
+}
+
+h4 {
+  color: #00898e;
+}
+
+/* unvisited link */
+a:link {
+  color: #ffcc33;
+}
+/* visited link */
+a:visited {
+  color: #ffcc33;
+}
+/* mouse over link */
+a:hover {
+  color: #ffcc33;
+}
+/* selected link */
+a:active {
+  color: #ffcc33;
+}
+
+.selected a {
+  color: #ffeebc;
+}
+
+/* Image  GET TO NON SQUISHY SIZE*/
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.profile-photo {
+  margin: 5%;
+}
+
+/*header*/
+
+
+/*body*/
+
+body {
+
+}
+
+h2 {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: block;
+  color: #00898e;
+}
+
+p {
+  margin: 5%;
+}
+
+/* Work */
+
+#title1  {
+  color: #00898e;
+}
+
+#title2  {
+  color: #00898e;
+}
+/*Contact*/
+
+.contact {
+  margin: 2.5%;
+}
+
+/* Portfolio  */
+
+#portfolio {
+  margin-left: 5%;
+}
+
+
+/* Responsive */
+
+.row_container {
+  display: flex;
+}
+
+.row_container {
+  flex-wrap: wrap;
+}
+
+
+
+/*480*/
+@media screen and (min-width: 480px){
+
+
+.column_container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+.profile_item {
+  flex: 1;
+}
+
+/*660*/
+
+@media screen and (min-width: 660px){
+
+.banner {
+  max-height: 12rem;
+  overflow: hidden;
+}
+h2 {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: block;
+}
+
+}
+/*1024*/
+@media screen and (min-width: 1024px){
+
+.banner {
+  max-height: 12rem;
+  overflow: hidden;
+  }
+
+
+/*.content {
+  margin-left: 10%;
+  margin-right: 10%;
+}*/
+
+
+/* Footer */
+
+
+/*.social-icon {
+  width: 20px;
+  height: 20px;
+  padding: 5%;
+  margin: 5%;
+}*/
