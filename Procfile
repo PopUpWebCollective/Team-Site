@@ -1,1 +1,1 @@
-web: gunicorn popup.wsgi
+web: gunicorn —pythonpath popup popup.wsgi
